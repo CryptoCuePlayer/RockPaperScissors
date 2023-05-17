@@ -1,0 +1,8 @@
+Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите свой выбор (камень, ножницы или бумага):");
+        String userChoice = scanner.nextLine().toLowerCase();
+
+        if (!userChoice.equals("камень") && !userChoice.equals("ножницы") && !userChoice.equals("бумага")) {
+            System.out.println("Некорректный выбор. Попробуйте снова.");
+            playGame();
+        } else {
